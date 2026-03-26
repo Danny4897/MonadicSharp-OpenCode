@@ -59,7 +59,7 @@ A method named `TrySave`, `TryParse`, or `TryConnect` that returns `bool` should
 ### GC008 — No nullable reference types for optional domain values
 `User?` as a field or return type means "might be absent." That belongs in `Option<User>`.
 
-### GC009 — Async methods return Task<Option<T>>, not Task<T?>
+### GC009 — Async methods return `Task<Option<T>>`, not `Task<T?>`
 Nullable task returns are hard to compose. Wrap them in `Option<T>` for consistent pipeline behavior.
 
 ### GC010 — All async methods accept CancellationToken
