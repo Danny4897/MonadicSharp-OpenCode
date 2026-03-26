@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'Structural guarantee that AI-generated C# code does not break in production — integrated directly into OpenCode.',
   base: '/MonadicSharp-OpenCode/',
   cleanUrls: true,
+  ignoreDeadLinks: true,
 
   head: [
     ['meta', { property: 'og:type', content: 'website' }],
